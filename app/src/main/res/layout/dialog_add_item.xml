@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Items"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+            android:layout_margin="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_add_item_item_name"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="6dp"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Quantity"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:hint="Qty"
+                android:inputType="numberDecimal"
+                android:background="@drawable/bg_item_et"
+                android:layout_width="100dp"
+                android:id="@+id/dialog_add_item_quantity"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_gravity="right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="6dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:buttonTint="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pcs."
+                android:id="@+id/dialog_add_item_radio_piece"/>
+            <RadioButton
+                android:buttonTint="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bag"
+                android:id="@+id/dialog_add_item_radio_bag"/>
+            <RadioButton
+                android:buttonTint="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kg"
+                android:id="@+id/dialog_add_item_radio_kg"/>
+            <RadioButton
+                android:buttonTint="@color/colorPrimary"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grams"
+                android:id="@+id/dialog_add_item_radio_gm"/>
+        </RadioGroup>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="6dp"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Unit Price"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:inputType="numberDecimal"
+                android:background="@drawable/bg_item_et"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/dialog_add_item_unit_price"
+                android:hint="Rs/-"
+                android:layout_gravity="right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="6dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:text="Discount"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:text="0"
+                android:background="@drawable/bg_item_et"
+                android:layout_width="100dp"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/dialog_add_item_discount"
+                android:hint="Rs/-"
+                android:layout_gravity="right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:padding="6dp"
+            android:background="@color/colorAccent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Total Amount"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:background="@drawable/bg_item_et"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/dialog_add_item_total_price"
+                android:hint="Rs/-"
+                android:layout_gravity="right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_margin="6dp"
+                android:padding="12dp"
+                android:id="@+id/dialog_add_item_button_add"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Add Item"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

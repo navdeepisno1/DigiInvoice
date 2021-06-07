@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:background="#fff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon_pwd"/>
+    <EditText
+        android:layout_marginTop="24dp"
+        android:letterSpacing="1"
+        android:gravity="center"
+        android:id="@+id/dialog_et_pwd"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:padding="12dp"
+        android:background="@drawable/bg_item_autoet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="XXXX"/>
+    <Button
+        android:id="@+id/dialog_btn_login"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter"/>
+
+</LinearLayout>

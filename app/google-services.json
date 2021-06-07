@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "731661951369",
+    "firebase_url": "https://digi-invoice.firebaseio.com",
+    "project_id": "digi-invoice",
+    "storage_bucket": "digi-invoice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731661951369:android:5c3ac23af91d0b83ab0158",
+        "android_client_info": {
+          "package_name": "com.suvidha.digiinvoice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731661951369-m4blpeht12v3blla70oenjivmspj4q4e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ09vrBiMOIuh3fhDD_y_HciRShwm_DFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731661951369-m4blpeht12v3blla70oenjivmspj4q4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

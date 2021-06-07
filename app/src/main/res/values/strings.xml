@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">डिजिटल बिल</string>
+    <string name="bno">Bill number</string>
+    <string name="shopName">दुकान का नाम</string>
+    <string name="shopkeeperName">दुकानदार का नाम</string>
+    <string name="mobile1">मोबाइल नंबर 1</string>
+    <string name="mobile2">मोबाइल नंबर 2</string>
+    <string name="mobile3">मोबाइल नंबर 3</string>
+    <string name="landmark">दुकान का पता</string>
+    <string name="addItem">सामान जोडें</string>
+    <string name="addNewBill">नया बिल जोड़ें</string>
+    <string name="dateDetails">उस तिथि के सभी बिल दिखाने के लिए तिथि का चयन करें</string>
+</resources>

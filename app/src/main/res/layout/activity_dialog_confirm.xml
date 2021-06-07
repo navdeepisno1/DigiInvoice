@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+    tools:context=".dialog_confirm">
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content"
+        android:text="क्या आप इसे हटाना चाहते हैं ?"/>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_margin="6dp"
+            android:id="@+id/dialog_confirm_NO"
+            app:icon="@drawable/icon_delete"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="नहीं"/>
+        <Button
+            android:textStyle="bold"
+            android:layout_margin="6dp"
+            app:icon="@drawable/icon_yes"
+            android:id="@+id/dialog_confirm_YES"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="हाँ"/>
+    </LinearLayout>
+</LinearLayout>
